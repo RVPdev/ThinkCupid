@@ -1,0 +1,274 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+main img {
+  width: 100px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #83092e;
+  padding: 20px 20px 0 0px;
+  text-align: center;
+
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 72px;
+  color: #ecdbc9;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* Nav bar */
+
+#menu {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+/* -------  Join Form ------- */
+form {
+  border: 2px solid #6b1a22;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+#join img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.email, .password, .username, .gender {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-----------   About -------------*/
+#about img {
+  width: 100%;
+  padding: 15px 0px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------------- Download------------ */
+
+#download img {
+  width: 100%;
+}
+
+/* ------- Blog -------------- */
+
+#blog img {
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  /* -------Navbar------------ */
+  header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+
+  ul {
+    padding-top: 5px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  /* ------- join------- */
+
+  #join {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #join img {
+    width: 70%;
+    margin-bottom: 0px;
+  }
+
+  .join-title {
+    width: auto;
+    font-size:  100%;
+    margin-bottom: 5px;
+  }
+
+  
+  form div {
+    flex-direction: row;
+  } 
+
+  form input, form select, form label {
+    width: 100%;
+    font-size: 70%;
+  }
+
+  form button {
+    font-size: 70%;
+  }
+
+  .join-form {
+    margin: auto;
+    margin-left: 5px;
+    width: 30%;
+  }
+
+  /* -----about------ */
+
+  .about-div {
+    display: flex;
+  }
+
+  #about img {
+    width: 20%;
+    
+    margin: 0 5px
+  }
+
+  .about-div p {
+    font-size: 70%;
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  /* ----download----- */
+
+  #download {
+    display: flex;
+  }
+
+  #download img {
+    width: 50%;
+    margin-left: 15px;
+  }
+
+  .download-div {
+    width: 50%;
+    font-size: 50%;
+    margin: auto;
+  }
+
+  .download-div h2 {
+    font-size: 200%;
+  }
+
+  /* ---blog-------- */
+  
+  .row-div {
+    display: flex;
+  }
+
+  .container {
+    margin: 5px;
+    font-size: 50%;
+  }
+
+  .container h3 {
+    font-size: 150%;
+  }
+}
